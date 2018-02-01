@@ -1,0 +1,33 @@
+#include<stdio.h>
+int average(int score[]);
+int main()
+{
+    int mark[5], avg, sum = 0,i;
+    printf("enter the elements\n");
+    for(i=0;i<=4;i++)
+    {
+    
+    scanf("%d",&mark[i]);
+    }
+    
+    avg = average(mark);
+    
+    printf("the average of the students is %d",avg);
+    
+    return 0;
+    
+}
+
+int average(int score[])
+{
+    int a, s=0,i;
+    
+    for(i=0;i<=4;i++)
+    s+= score[i];
+    
+    a= s/5;
+    
+    return a;
+    
+}
+    
